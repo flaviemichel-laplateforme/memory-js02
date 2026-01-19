@@ -7,13 +7,17 @@ import Card from './components/Card/Card';
 
 
 const cardImages = [
-    { "src": "terre.png", matched: false },
-    { "src": "jupiter.png", matched: false },
-    { "src": "mars.png", matched: false },
-    { "src": "saturne.png", matched: false },
-    { "src": "soleil.png", matched: false },
-    { "src": "uranus.png", matched: false },
+    { "src": "/images/terre.png", matched: false },
+    { "src": "/images/jupiter.png", matched: false },
+    { "src": "/images/mars.png", matched: false },
+    { "src": "/images/saturne.png", matched: false },
+    { "src": "/images/soleil.png", matched: false },
+    { "src": "/images/uranus.png", matched: false },
 ];
+
+const coverImage = "/images/cover.png";
+
+
 
 function App() {
     const [cards, setCards] = useState([]);
@@ -22,6 +26,7 @@ function App() {
     const [choiceTwo, setChoiceTwo] = useState(null);
     const [disabled, setDisabled] = useState(false);
     const [gameWon, setGameWon] = useState(false);
+
 
     //Mélanger les cartes
     const shuffleCards = () => {
@@ -104,6 +109,7 @@ function App() {
                     <Card
                         key={card.id}
                         card={card}
+                        cover={coverImage}
                         handleChoice={handleChoice}
                         flipped={card === choiceOne || card === choiceTwo || card.matched}
                         disabled={disabled}
@@ -115,6 +121,8 @@ function App() {
             <Button text="Recommencer" onClick={shuffleCards} />
         </div>
     );
+
+
 }
 
 export default App;
