@@ -17,7 +17,7 @@ export default function Card({ card, handleChoice, flipped, disabled }) {
                 {/* Face cachée (Dos) */}
                 <img
                     className="back"
-                    src="dos.png"
+                    src="/images/dos.jpeg"
                     onClick={handleClick}
                     alt="card back"
                 />
