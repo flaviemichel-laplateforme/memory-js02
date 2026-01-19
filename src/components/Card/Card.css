@@ -35,13 +35,13 @@
 .card .front {
     transform: rotateY(180deg);
     background-color: #000;
-    object-fit: cover;
-    padding: 5px;
+    object-fit: contain;
+    padding: 10px;
 }
 
 .card .back {
     background-color: #fff;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
-    object-fit: contain;
+    object-fit: cover;
 }
