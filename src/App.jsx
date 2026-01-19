@@ -7,12 +7,12 @@ import Card from './components/Card/Card';
 
 
 const cardImages = [
-    { "src": "/images/terre.png", matched: false },
-    { "src": "/images/jupiter.png", matched: false },
-    { "src": "/images/mars.png", matched: false },
-    { "src": "/images/saturne.png", matched: false },
-    { "src": "/images/soleil.png", matched: false },
-    { "src": "/images/uranus.png", matched: false },
+    { "src": "/images/terre.png", name: "Terre", matched: false },
+    { "src": "/images/jupiter.png", name: "Jupiter", matched: false },
+    { "src": "/images/mars.png", name: "Mars", matched: false },
+    { "src": "/images/saturne.png", name: "Saturne", matched: false },
+    { "src": "/images/soleil.png", name: "Soleil", matched: false },
+    { "src": "/images/uranus.png", name: "Uranus", matched: false },
 ];
 
 const coverImage = "/images/cover.png";
