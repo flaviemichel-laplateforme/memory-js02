@@ -99,7 +99,7 @@ function App() {
                     <h2>Félicitations ! Vous avez gagné en {turns} tours !</h2>
                 </div>
             ) : (
-                <p>Tours : {turns}</p>
+                <p style={{ color: 'white' }}>Nombre de coups : {turns}</p>
             )}
 
             {/* Grille de cartes */}
@@ -119,7 +119,7 @@ function App() {
 
             {/* 3. Composant Button (Generic) */}
             <Button text="Recommencer" onClick={shuffleCards} />
-        </div>
+        </div >
     );
 
 

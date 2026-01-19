@@ -45,3 +45,10 @@
     cursor: pointer;
     object-fit: cover;
 }
+
+.front-text {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    color: #fff;
+    padding: 10px;
+}

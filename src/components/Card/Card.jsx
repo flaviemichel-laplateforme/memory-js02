@@ -12,7 +12,12 @@ export default function Card({ card, handleChoice, flipped, disabled }) {
         <div className="card">
             <div className={flipped ? "flipped" : ""}>
                 {/* Face visible (Image Planète) */}
-                <img className="front" src={card.src} alt="card front" />
+                <img className="front" src={card.src} alt={card.name} />
+
+                {/* Ajout nom de la planète */}
+                <p className='front-text'>{card.name}</p>
+
+
 
                 {/* Face cachée (Dos) */}
                 <img
