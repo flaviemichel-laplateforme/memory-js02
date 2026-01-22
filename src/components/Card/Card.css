@@ -1,8 +1,17 @@
 .card {
     position: relative;
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    max-width: 150px;
+    aspect-ratio: 3/4;
+    min-height: 150px;
     perspective: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .card {
+        max-width: 180px;
+    }
 }
 
 /* Gestion de l'animation 3D */
