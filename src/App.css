@@ -1,8 +1,10 @@
 .App {
   max-width: 800px;
+  min-height: 100vh;
   text-align: center;
   font-family: Arial, sans-serif;
   margin: 30px auto;
+  padding-bottom: 50px;
 }
 
 .card-grid {
