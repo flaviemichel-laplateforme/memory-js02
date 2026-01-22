@@ -32,7 +32,7 @@ function App() {
     const shuffleCards = () => {
         const shuffleCards = [...cardImages, ...cardImages]
             .sort(() => Math.random() - 0, 5)
-            .map((card) => ({ ...card, id: Math.random }));
+            .map((card) => ({ ...card, id: Math.random() }));
 
         setChoiceOne(null);
         setChoiceTwo(null);
