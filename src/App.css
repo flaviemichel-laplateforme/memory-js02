@@ -8,19 +8,27 @@
 .card-grid {
   margin: 30px auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr) !important;
-  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
   justify-content: center;
-  max-width: 100%;
+  max-width: 800px;
   padding: 0 10px;
 }
 
-/* Desktop uniquement : 4 cartes par ligne (2 paires) */
-@media (min-width: 1025px) {
+/* Mobile portrait uniquement : 2 cartes par ligne (1 paire) */
+@media (max-width: 600px) and (orientation: portrait) {
   .card-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 25px;
-    max-width: 800px;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px;
+    max-width: 100%;
+  }
+}
+
+/* Petits écrans en paysage : 4 cartes par ligne */
+@media (max-width: 600px) and (orientation: landscape) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
   }
 }
 
